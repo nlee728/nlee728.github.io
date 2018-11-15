@@ -111,7 +111,11 @@ a.port {
   width: 100%;
   bottom: 12px;
   text-decoration-color: #ffffff;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
+}
+
+a.port:hover {
+  opacity: 0.4;
 }
 
 textarea {
