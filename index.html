@@ -33,12 +33,12 @@
           <a class="js-scroll-trigger" href="#about">About</a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#services">Skills</a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
-        </li>
-        <li class="sidebar-nav-item">
+            <a class="js-scroll-trigger" href="#portfolio"> Dev Portfolio</a>
+          </li>
+          <li class="sidebar-nav-item">
+              <a class="js-scroll-trigger" href="#services">Design Portfolio</a>
+            </li>
+          <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="#contact">Contact</a>
         </li>
       </ul>
@@ -46,12 +46,6 @@
 
     <!-- Header -->
     <header class="masthead d-flex">
-      <div class="container text-center my-auto">
-        <h1 class="mb-1">Nutishia Lee</h1>
-        <h3 class="mb-5">
-          <em>Full Stack Developer & Graphic Designer</em>
-        </h3>
-      </div>
       <div class="overlay"></div>
     </header>
 
@@ -60,134 +54,186 @@
       <div class="container text-center">
         <div class="row">
           <div class="col-lg-5 mx-auto">
-              <img id="profilepic" src="img/nleeportpic.jpg" alt="profile picture">
-              <h1>Meet Nutishia</h1>
+              <!-- <img id="profilepic" src="./img/nleeportpic.jpg" alt="profile picture"> -->
+              <h6>A LITTLE BIT</h6>
+              <h1>ABOUT ME</h1>
+              <h3>I am a <em>Full Stack Developer and Graphic Designer</em> in Durham, North Carolina.</h3>
            </div>
-          <div class="col-lg-5 mx-auto">
-              <p>Nutishia is a Graphic Designer and Full Stack Developer in Durham, North Carolina.
-              Art and design have always been a passion for her. Being both driven and self-motivated, 
-              she is constantly experimenting with new technologies and techniques as she strives to 
-              better herself as a developer.</p> 
+          <div class="col-lg-5 mx-auto"> 
+              <h3>I have been creating art for as long as I can remember. From my early days of sketching and painting
+              and then with vector design and web development, I am always ready to tackle the next project.</h3> 
               <hr>
-              <p>Nutishia possesses experience in both front and back-end development, 
-              and is proficient in HTML/HTML5, CSS/CSS3, JavaScript, jQuery, NodeJS and AJAX to 
-              name a few. She utilizes Git version control and likes to work with the Bootstrap framework.
-              She also possesses great skill with Adobe Illustrator, Photoshop, and InDesign.
-              Nutishia is devoted to modern and clean designs and am an advocate of structure and simplicity 
-              in both design and code.</p>
-          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#portfolio">View Portfolio</a>
-        </div>
+              <h5>I love all things Adobe and am a React fanatic.
+              I have designed websites, apps and logos for organizations like the Duke University School of Medicine
+               Zebrafish Core Facilities, Elevation Properties, Lott Realty and many more. I have also had my work featured 
+              in scientific journals such as Developmental Cell and Current Biology.</h5>
+          </div>
         </div>
       </div>
     </section>
 
-       <!-- Portfolio -->
-    <section class="content-section" id="portfolio">
+       <!--Code Portfolio -->
+    <section class="content-section text-center" id="portfolio">
       <div class="container">
         <div class="content-section-heading text-center">
           <h3 class="text-secondary mb-0">Portfolio</h3>
-          <h2 class="mb-5">Recent Projects</h2>
+          <h2 class="mb-5">Recent Development Projects</h2>
         </div>
-        <div class="row no-gutters">
-          <div class="col-lg-6">
+        <div class="row no-gutters port-row">
+            <div class="col-lg-1"></div>
+          <div class="col-lg-5 text-center">
             <a class="portfolio-item" href="https://immense-mesa-61835.herokuapp.com/">
-              <span class="caption">
-                <span class="caption-content">
-                  <h2>YumBot</h2>
-                  <p class="mb-0">Personal Recipe Application</p>
-                </span>
-              </span>
-              <img class="img-fluid" src="img/Yumbot-screenshot.PNG" alt="">
+              <img class="img-fluid" src="img/yumbot-mockup2.png" alt="">
             </a>
             <img alt="" src="img/mongodb.png" class="skill-img">
             <img alt="" src="img/express.png" class="skill-img">
             <img alt="" src="img/react.png" class="skill-img">
-            <img alt="" src="img/nodejs.png" class="skill-img">
+            <img alt="" src="img/node.png" class="skill-img">
+            <h4>YumBot - A Personal Digital Cookbook</h4>
+              <p>YumBot allows the user to create an inventory of ingredients on hand, 
+                then submit a search to the Recipe Puppy API to return recipes that include
+                 one or more of those ingredients. Users can favorite recipes to have them 
+                 saved to their own Favorite Recipes Page. They can also save and edit their own 
+                 recipes via their own Personal Recipes Page. Once saved, the recipes can be printed, 
+                 emailed or tweeted.
+              </p>
           </div>
-          <div class="col-lg-6">
+            <div class="col-lg-1"></div>
+          <div class="col-lg-5 text-center">
             <a class="portfolio-item" href="#">
-              <span class="caption">
-                <span class="caption-content">
-                  <h2>FishTrak</h2>
-                  <p class="mb-0">Zebrafish Management System</p>
-                </span>
-              </span>
-              <img class="img-fluid" src="img/fishtrak-screenshot2.PNG" alt="">
+              <img class="img-fluid" src="img/fishtrak-mockup.png" alt="">
             </a>
             <img alt="" src="img/mongodb.png" class="skill-img">
             <img alt="" src="img/express.png" class="skill-img">
             <img alt="" src="img/react.png" class="skill-img">
-            <img alt="" src="img/nodejs.png" class="skill-img">
+            <img alt="" src="img/node.png" class="skill-img">
+            <h4>FishTrak - Zebrafish Management System</h4>
+              <p>The FishTrak app allows research labs to keep track of their 
+                stocks in a digital format accessible to everyone within the lab.
+                 It also allows husbandry staff to communicate more easily
+                  with the research staff regarding the fish in their care.
+              </p>
           </div>
-          <div class="col-lg-6">
+          </div>
+          <div class="row no-gutters port-row">
+          <div class="col-lg-1"></div>
+          <div class="col-lg-5 text-center">
             <a class="portfolio-item" href="https://clickygame0728.herokuapp.com/">
-              <span class="caption">
-                <span class="caption-content">
-                  <h2>Clicky Game</h2>
-                  <p class="mb-0">Javascript Game</p>
-                </span>
-              </span>
-              <img class="img-fluid" src="img/clickygame-screenshot.PNG" alt="">
+              <img class="img-fluid" src="img/clickygame-mockup.png" alt="">
             </a>
             <img alt="" src="img/react.png" class="skill-img">
             <img alt="" src="img/javascript.png" class="skill-img">
             <img alt="" src="img/jquery.png" class="skill-img">
+            <h4>Clicky Game - Javascript Game</h4>
+              <p>A game where players have to click on every image once to win the game. 
+                Click on any twice and it's game over.
+              </p>
           </div>
-          <div class="col-lg-6">
+        <div class="col-lg-1"></div>
+          <div class="col-lg-5 text-center">
             <a class="portfolio-item" href="https://nlee728.github.io/Project1/">
-              <span class="caption">
-                <span class="caption-content">
-                  <h2>Pick-A-Flick</h2>
-                  <p class="mb-0">Movie Selection Application</p>
-                </span>
-              </span>
-              <img class="img-fluid" src="img/pickaflick-screenshot.PNG" alt="">
+              <img class="img-fluid" src="img/pickaflick-mockup.png" alt="">
             </a>
             <img alt="" src="img/javascript.png" class="skill-img">
             <img alt="" src="img/jquery.png" class="skill-img">
             <img alt="" src="img/firebase.png" class="skill-img">
+            <h4>Pick A Flick - Movie Selection Application</h4>
+              <p>Users are able to create 
+                a group and vote with other users in the group on movies available in their zipcode. The 
+                TMS API will choose 5 movies and once the users submit their votes,
+                 the Open Agora API will tally the votes and show the winning movie. 
+                 Users will then be able to vote on showtimes for their chosen movie.
+              </p>
+          </div>
           </div>
         </div>
       </div>
     </section>
 
-     <!-- Services -->
-     <section class="content-section bg-primary text-white text-center" id="services">
+     <!-- Design Portfolio -->
+     <section class="content-section text-center" id="services">
         <div class="container">
-            <div class="content-section-heading">
-                <h4 class="mb-5">Other Technologies</h4>
+            <div class="content-section-heading text-center">
+              <h2 class="mb-5">Recent Design Projects</h2>
+            </div>
+            <div class="row no-gutters port-row">
+                <div class="col-lg-1"></div>
+              <div class="col-lg-5 text-center">
+                <a class="portfolio-item" href="#">
+                 
+                  <img class="img-fluid" src="img/tzc.png" alt="">
+                </a>
+               <h4>Triangle Zebrafish Community Logo</h4>
+                  <p>Logo and swag designs created for the Triangle Zebrafish Community's annual retreat.
+                  </p>
               </div>
-            
-          <div class="row text-center">
-            <div class="col mb-5 mb-md-0">
-                <img alt="" src="img/github.png" class="skill-img">
-                <img alt="" src="img/heroku.png" class="skill-img">
-                <img alt="" src="img/photoshop.png" class="skill-img">
-                <img alt="" src="img/Ai.png" class="skill-img">
-                <img alt="" src="img/wordpress.png" class="skill-img">
-                <img alt="" src="img/mysql.png" class="skill-img">
+              <div class="col-lg-1"></div>
+              <div class="col-lg-5 text-center">
+                <a class="portfolio-item" href="#">
+                  
+                  <img class="img-fluid" src="img/Diive.jpg" alt="">
+                </a>
+                <h4>Diive Consulting Ad</h4>
+                  <p>Magazine advertisement designed for Derek Williams at Diive Consulting. 
+                  </p>
+              </div>
+              </div>
+               
+              <div class="row no-gutters port-row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-5 text-center">
+                  <a class="portfolio-item" href="#">
+                   
+                    <img class="img-fluid" src="img/DevCellFeb2017.png" alt="">
+                  </a>
+                <h4>Developmental Cell Cover Image</h4>
+                    <p>An image submitted alongside the Goldman et al. publication 
+                        <a href="https://www.ncbi.nlm.nih.gov/pubmed/28245924">"Resolving Heart Regeneration by Replacement Histone Profiling"</a> to 
+                      Developmental Cell. It was featured on the journal's cover.
+                    </p>
+                    </div>
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-5 text-center">
+                      <a class="portfolio-item" href="#">
+                       
+                        <img class="img-fluid" src="img/ZCoreProjectPortfolio.png" alt="">
+                      </a>
+                    <h4>Z-Core Website and Branding</h4>
+                        <p>A website and logo designed for the Duke University
+                           School of Medicine Zebrafish Core Facilities (Z-Core) using the Wordpress platform. 
+                        </p>
+                    </div>
+                    </div>
+             
             </div>
           </div>
       </section>
 
     <!-- Call to Action -->
-    <!-- <section class="content-section bg-primary text-white">
+    <section class="content-section bg-primary text-white" id="contact">
       <div class="container text-center">
-        <h2 class="mb-4">Impressed by what you see here?</h2>
-        <a href="#" class="btn btn-xl btn-light mr-4">Contact Me</a>
+        <h2 class="mb-4">Have a project you want to discuss?</h2>
+        <form id="contactform" method="POST">
+            <input type="text" name="name" placeholder="Your name">
+            <input type="email" name="_replyto" placeholder="Your email">
+            <input type="hidden" name="_subject" value="Website contact" />
+            <textarea name="message" placeholder="Your message"></textarea>
+            <input type="text" name="_gotcha" style="display:none" />
+            <input class="btn btn-xl btn-light mr-4" type="submit" value="Contact Me">
+        </form>
+        <script>
+            var contactform =  document.getElementById('contactform');
+            contactform.setAttribute('action', '//formspree.io/' + 'hello' + '@' + 'nleedesign' + '.' + 'com');
+        </script>
       </div>
-    </section> -->
-
-    <!-- Map -->
-    <!-- <section id="contact" class="map">
-    </section> -->
+    </section>
 
     <!-- Footer -->
-    <footer class="footer text-center">
+    <footer class="footer bg-secondary text-center">
       <div class="container">
         <ul class="list-inline mb-5">
           <li class="list-inline-item">
-              <a class="social-link rounded-circle text-white" href="https://github.com/nlee728"">
+              <a class="social-link rounded-circle text-white mr-3" href="https://github.com/nlee728"">
                 <i class="icon-social-github"></i>
               </a>
           </li>
@@ -202,7 +248,7 @@
               </a>
           </li>
         </ul>
-        <p class="text-muted small mb-0">Copyright &copy; NLee Design 2018</p>
+        <p class="text-muted small mb-0">Copyright &copy; NLee Design 2019</p>
       </div>
     </footer>
 

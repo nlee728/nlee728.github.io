@@ -38,22 +38,6 @@ h6 {
 .text-faded {
   color: rgba(255, 255, 255, 0.7);
 }
-
-/* Map */
-.map {
-  height: 30rem;
-}
-
-@media (max-width: 992px) {
-  .map {
-    height: 75%;
-  }
-}
-
-.map iframe {
-  pointer-events: none;
-}
-
 .scroll-to-top {
   position: fixed;
   right: 15px;
@@ -80,16 +64,8 @@ h6 {
 }
 
 .masthead {
-  min-height: 30rem;
-  position: relative;
-  display: table;
-  width: 100%;
-  height: auto;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("../img/nld-homepage2.jpg");
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/nld-homepage2.jpg");
-  background-position: center center;
+  background-image: url("../img/nld_bg2.png");
+  height: 100%; 
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -98,16 +74,30 @@ h6 {
   font-size: 4rem;
   margin: 0;
   padding: 0;
+  color: white;
+}
+
+.masthead h3 {
+  color: white;
 }
 
 #profilepic {
-  height: 400px;
+  height: 200px;
   width: auto
+}
+
+.port-row {
+  margin-bottom: 50px;
 }
 
 .skill-img {
   height: 50px;
   width: auto
+}
+
+.bg2 {
+  background-image: url("../img/nld_bg1.png");
+  height: 50%;
 }
 
 @media (min-width: 992px) {
@@ -130,7 +120,7 @@ h6 {
   transition: all 0.4s ease 0s;
   -webkit-transform: translateX(250px);
   transform: translateX(250px);
-  background: purple;
+  background: #46065abb;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -163,7 +153,7 @@ h6 {
 
 .sidebar-nav > .sidebar-brand {
   font-size: 1.2rem;
-  background: rgba(52, 58, 64, 0.1);
+  background:#46065a85;
   height: 80px;
   line-height: 50px;
   padding-top: 15px;
@@ -187,6 +177,7 @@ h6 {
   transition: all 0.4s ease 0s;
 }
 
+/* Menu */
 .menu-toggle {
   position: fixed;
   right: 15px;
@@ -210,7 +201,7 @@ h6 {
 
 .service-icon {
   background-color: #fff;
-  color: purple;
+  color: rgba(77, 4, 77, 0.425);
   height: 7rem;
   width: 7rem;
   display: block;
@@ -220,74 +211,38 @@ h6 {
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
-
 .portfolio-item {
   display: block;
   position: relative;
   overflow: hidden;
-  max-width: 530px;
+  max-width: 400px;
   margin: auto auto 1rem;
+  transition: transform .2s;
 }
-
-.portfolio-item .caption {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  width: 100%;
-  /* background-color: rgba(33, 37, 41, 0.2); */
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  z-index: 1;
-}
-
-.portfolio-item .caption .caption-content {
-  color: #fff;
-  margin: auto 2rem 2rem;
-}
-
-.portfolio-item .caption .caption-content h2 {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-}
-
-.portfolio-item .caption .caption-content p {
-  font-weight: 300;
-  font-size: 1.2rem;
+.portfolio-item:hover {
+  transform: scale(1.5);
 }
 
 @media (min-width: 992px) {
   .portfolio-item {
-    max-width: none;
+    max-width: 450px;
     margin: 0;
   }
-  .portfolio-item .caption {
-    -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
-    -webkit-clip-path: inset(0px);
-    clip-path: inset(0px);
-  }
-  .portfolio-item .caption .caption-content {
-    -webkit-transition: opacity 0.25s;
-    transition: opacity 0.25s;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    margin-bottom: 5rem;
-  }
   .portfolio-item img {
-    -webkit-transition: -webkit-clip-path 0.25s ease-out;
-    -webkit-clip-path: inset(-1px);
-    clip-path: inset(-1px);
+    transition: transform .2s;
   }
   .portfolio-item:hover img {
-    -webkit-clip-path: inset(2rem);
-    clip-path: inset(2rem);
+    transform: scale(1.0);
   }
-  .portfolio-item:hover .caption {
-    background-color: rgba(88, 29, 76, 0.9);
-    -webkit-clip-path: inset(2rem);
-    clip-path: inset(2rem);
-  }
+}
+
+
+.masthead {
+  background-image: url("../img/nld_bg2.png");
+    height: 100%; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 footer.footer {
@@ -301,7 +256,7 @@ footer.footer .social-link {
   width: 4rem;
   line-height: 4.3rem;
   font-size: 1.5rem;
-  background-color: purple;
+  background-color: #47065a;
   -webkit-transition: background-color 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out;
   -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
@@ -314,7 +269,7 @@ footer.footer .social-link:hover {
 }
 
 a {
-  color: purple;
+  color: rgba(77, 4, 77, 0.425);
 }
 
 a:hover, a:focus, a:active {
@@ -322,25 +277,14 @@ a:hover, a:focus, a:active {
 }
 
 .btn-primary {
-  background-color: purple !important;
-  border-color: purple !important;
+  background-color: rgba(77, 4, 77, 0.425) !important;
+  border-color: rgba(77, 4, 77, 0.425) !important;
   color: #fff !important;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background-color: darkgrey !important;
   border-color: darkgrey !important;
-}
-
-.btn-secondary {
-  background-color: #ecb807 !important;
-  border-color: #ecb807 !important;
-  color: #fff !important;
-}
-
-.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
-  background-color: #ba9106 !important;
-  border-color: #ba9106 !important;
 }
 
 .btn-dark {
@@ -354,11 +298,15 @@ a:hover, a:focus, a:active {
 }
 
 .bg-primary {
-  background-color: purple !important;
+  background-color: #47065a !important;
+}
+
+.bg-secondary {
+  background-color: #020202 !important;
 }
 
 .text-primary {
-  color: purple !important;
+  color: rgba(77, 4, 77, 0.425) !important;
 }
 
 .text-secondary {
