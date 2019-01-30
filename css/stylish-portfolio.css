@@ -246,52 +246,10 @@ h6 {
 }
 
 /* Contact Form */
-#contactform {
-	background:#F9F9F9;
-	padding:25px;
-	margin:50px 0;
+label {
+	color: #47065a;
 }
 
-#contactform input[type="text"], #contactform input[type="email"],
-#contactform input[type="url"], #contactform textarea {
-	width:90%;
-	border:1px solid #CCC;
-	background:#FFF;
-	margin:0 0 5px;
-	padding:10px;
-}
-
-#contactform input[type="text"]:hover, 
-#contactform input[type="email"]:hover, 
-#contactform textarea:hover {
-	-webkit-transition:border-color 0.3s ease-in-out;
-	-moz-transition:border-color 0.3s ease-in-out;
-	transition:border-color 0.3s ease-in-out;
-	border:1px solid #AAA;
-}
-
-#contactform textarea {
-	height:100px;
-	max-width:90%;
-  resize:none;
-}
-#contactform input:focus, 
-#contactform textarea:focus {
-	outline:0;
-	border:1px solid #999;
-}
-::-webkit-input-placeholder {
- color:#888;
-}
-:-moz-placeholder {
- color:#888;
-}
-::-moz-placeholder {
- color:#888;
-}
-:-ms-input-placeholder {
- color:#888;
-}
 
 footer.footer {
   padding-top: 5rem;

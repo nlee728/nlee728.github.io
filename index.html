@@ -2,20 +2,15 @@
 <html lang="en">
 
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title> NLee Design</title>
     <link rel="shortcut icon" type="image/png" href="./img/favicon.png"/>
-    <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom Fonts -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-    <!-- Custom CSS -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
-
   </head>
 
   <body id="page-top">
@@ -204,24 +199,69 @@
                         </p>
                     </div>
                     </div>
-             
             </div>
           </div>
       </section>
 
-    <!-- Call to Action -->
+    <!-- Contact -->
     <section class="content-section bg-primary text-white" id="contact">
       <div class="container text-center">
         <h2 class="mb-4">Have a project you want to discuss?</h2>
-        <form id="contactform" method="POST" action="https://formspree.io/hello@nleedesign.com">
-          <input type="text" name="name" placeholder="Your name">
-          <input type="email" name="_replyto" placeholder="Your email">
-          <input type="hidden" name="_subject" value="Website contact" />
-          <textarea name="message" placeholder="Your message"></textarea>
-          <input type="text" name="_gotcha" style="display:none" />
-          <input class="btn btn-xl btn-light mr-4" type="submit" value="Contact Me">
-      </form>
+        <h1 class="text-center">
+          <a href="#contactModal" role="button" class="btn btn-xl btn-light mr-4" data-toggle="modal">
+            Contact Me
+          </a>
+        </h1>
       </div>
+
+      <!-- Contact Form Modal -->
+      <div id="contactModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <label id="myModalLabel"><strong>I'd Love to Hear From You!</strong></label>
+            </div>
+            <div class="modal-body">
+              <form class="form-horizontal col-sm-12" id="contactform" method="POST" action="https://formspree.io/hello@nleedesign.com">
+                <div class="form-group">
+                  <label>Name</label>
+                  <input class="form-control required" placeholder="Your name" data-placement="top" data-trigger="manual" 
+                        data-content="Must be at least 3 characters long, and must only contain letters." type="text" name="name">
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input class="form-control required email" placeholder="Your email" 
+                          data-placement="top" data-trigger="manual" data-content="Must be a valid e-mail address (user@gmail.com)" type="text"  name="_replyto">
+                  </div>
+                  <input type="hidden" name="_subject" value="Website contact" />
+                  <input type="text" name="_gotcha" style="display:none" />
+                <div class="form-group">
+                  <label>Message</label>
+                  <textarea class="form-control required" placeholder="Type a message." data-placement="top" data-trigger="manual" name="message"></textarea>
+                </div>                
+                <div class="form-group">
+                  <button type="submit" class="btn btn-dark">Send</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Email Sent Modal -->
+       <div id="sentModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                    <label>Success! Thanks for your message!</label>
+              </div>
+              <div class="modal-footer">
+                <button class="btn"  aria-hidden="true" data-dismiss="sentModal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
     </section>
 
     <!-- Footer -->
@@ -253,12 +293,9 @@
       <i class="fas fa-angle-up"></i>
     </a>
 
-    <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <!-- Custom scripts for this template -->
     <script src="js/stylish-portfolio.js"></script>
 
   </body>
