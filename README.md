@@ -18,4 +18,4 @@
 
 ## License
 
-Copyright 2018 UNC Coding Bootcamp - Nutishia Lee
+Copyright 2019 - Nutishia Lee
