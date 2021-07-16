@@ -15,191 +15,267 @@
 
     <!-- Navigation -->	
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html"><b><span>nlee</span>design</b></a>
+        <a class="navbar-brand" href="index.html">
+          <!-- <b><span>nlee</span>design</b> -->
+          <img id="logo" src="img/nleedesign_logo.png" alt="nleedesign logo">
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav nav ml-auto">
-                <li class="nav-item"><a href="#home" class="nav-link"><span>home</span></a></li>
-                <li class="nav-item"><a href="#about" class="nav-link"><span>about</span></a></li>
-                <li class="nav-item"><a href="#portfolio" class="nav-link"><span>portfolio</span></a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link"><span>contact</span></a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link"><span>CONTACT</span></a></li>
               </ul>
         </div>
-      </nav>  
+    </nav>  
 
     <!-- Header -->
-    <header>
+    <header class="text-center">
       <div class="container">
         <div class="row no-gutters port-row parent">
             <div class="col-lg-1"></div>
-          <div class="col-lg-5 text-center">
-            <img id="profilepic" src="./img/nlee_headshot_tilt.jpg" alt="profile picture">
-          </div>
-            <div class="col-lg-1"></div>
-          <div class="col-lg-5 text-center child">
+          <div class="col-lg-5 text-left child">
               <h1><span>Nutishia Lee</span></h1>
-              <h3>Full Stack Developer 
-                <br>
-                and Graphic Designer 
-                <br>
-                in Durham, North Carolina.</h3>
+              <hr>
+              <h4 class="text-tertiary">Full Stack Developer, Graphic Designer based in Durham, NC</h4>
+          </div>
+          <div class="col-lg-1"></div>
+          <div class="col-lg-5 text-center child">
           </div>
           </div>
         </div>
     </header>
 
-    <!-- About -->
-    <section class="content-section bg-light" id="about">
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-lg-5 mx-auto">
-              <h1><span>About me</span></h1>
-              <hr>
-              <p>I have been creating art for as long as I can remember. From my early days of sketching and painting
-               and then with vector design and web development, I am always ready to tackle the next project.</p> 
-              <hr>
-              <p>I love all things Adobe and am a React fanatic.
-               I have designed websites, apps and logos for organizations like the Duke University School of Medicine
-               Zebrafish Core Facilities, Elevation Properties, Lott Realty and many more. I have also had my work featured 
-               in scientific journals such as Developmental Cell and Current Biology.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
        <!--Portfolio -->
     <section class="content-section text-center" id="portfolio">
       <div class="container">
         <div class="content-section-heading text-center">
-          <h1 class="text-secondary mb-0"><span>Portfolio</span></h1>
+          <hr>
+          <h3 class="text-secondary mb-0"><span>CHECK OUT SOME OF MY PROJECTS</span></h3>
           <hr>
         </div>
-        <div class="row no-gutters port-row">
+      </div>
+    </section>
+        <!-- Inhabit - left -->
+        <section class="content-section">
+          <div class="container">
+          <div class="row no-gutters port-row">
             <div class="col-lg-1"></div>
           <div class="col-lg-5 text-center">
-            <a class="portfolio-item" href="https://immense-mesa-61835.herokuapp.com/">
-              <img class="img-fluid" src="img/yumbot-mockup2.png" alt="">
+            <a class="portfolio-item ">
+              <img class="img-fluid portfolio-image" src="img/Inhabit Tshirt_5.png" alt="">
             </a>
-            <img alt="" src="img/mongodb.png" class="skill-img">
-            <img alt="" src="img/express.png" class="skill-img">
-            <img alt="" src="img/react.png" class="skill-img">
-            <img alt="" src="img/node.png" class="skill-img">
-            <h4>YumBot - A Personal Digital Cookbook</h4>
-              <p>YumBot allows the user to create an inventory of ingredients on hand, 
-                then submit a search to the Recipe Puppy API to return recipes that include
-                 one or more of those ingredients. Users can favorite recipes to have them 
-                 saved to their own Favorite Recipes Page. They can also save and edit their own 
-                 recipes via their own Personal Recipes Page. Once saved, the recipes can be printed, 
-                 emailed or tweeted.
+          </div>
+            <div class="col-lg-1"></div>
+          <div class="col-lg-5 text-left">
+            <h4>Inhabit Real Estate</h4>
+            <h6>T-Shirt Designs</h6>
+              <p>I worked with Charles at Inhabit Real Estate to design a t-shirt for their firm. 
+                The owners expressed wanting something that both embodied North Carolina and incorporated the Inhabit brand.
+                I used the NC state outline in combination with elements from the North Carolina and Durham flags
+                to show off state and city pride.
               </p>
           </div>
+          </div>
+          </div>
+        </section>
+        <!-- ISRB - right -->
+        <section class="content-section bg-tertiary">
+          <div class="container">
+          <div class="row no-gutters  port-row">
+          <div class="col-lg-1"></div>
+          <div class="col-lg-5 text-left">
+            <h4>International Society for Regenerative Biology</h4>
+            <h6>Logo</h6>
+              <p>The International Society for Regenerative Biology asked me to design a logo for their new organization. 
+                They wanted a clean, professional logo that embodied their mission. To promote regenerative biology 
+                research and education worldwide and facilitate the exchange of scientific information and resources 
+                within the international tissue regeneration community.
+              </p>
+          </div>
+          <div class="col-lg-1"></div>
+          <div class="col-lg-5 text-left">
+            <a class="portfolio-item">
+              <img class="img-fluid portfolio-image" src="img/ISRB_color.png" alt="">
+            </a>
+          </div>
+          </div>
+          </div>
+        </section>
+        <!-- DRC - left -->
+        <section class="content-section">
+          <div class="container">
+          <div class="row no-gutters port-row">
+            <div class="col-lg-1"></div>
+          <div class="col-lg-5 text-left">
+            <a class="portfolio-item">
+              <img class="img-fluid" src="img/drc_dark.png" alt="">
+            </a>
+          </div>
+            <div class="col-lg-1"></div>
+          <div class="col-lg-5 text-left">
+            <h4>Duke Regeneration Center</h4>
+            <h6>Logo</h6>
+              <p>This is a logo I designed for Ken Poss, Ph.D., for the new Duke Regeneration Center. 
+                The logo uses the Duke branding conventions and coloring, while also remaining unique.
+              </p>
+          </div>
+          </div>
+          </div>
+        </section>
+        <!-- TZC - right -->
+        <section class="content-section bg-tertiary">
+          <div class="container">
+          <div class="row no-gutters port-row">
+            <div class="col-lg-1"></div>
+          <div class="col-lg-5 text-left">
+            <h4>Triangle Zebrafish Community</h4>
+            <h6>Logo and Swag</h6>
+              <p>I put together a design combo for the Triangle Zebrafish Community's annual retreat. 
+                It included a logo and a swag design. The designs were featured on items like t-shirts, coffee mugs
+                and print materials. 
+              </p>
+          </div>
+          <div class="col-lg-1"></div>
+          <div class="col-lg-5 text-left">
+            <a class="portfolio-item">
+              <img class="img-fluid portfolio-image" src="img/tzc.png" alt="">
+            </a>
+          </div>
+          </div>
+          </div>
+        </section>
+        <!-- Diive - left -->
+        <section class="content-section">
+          <div class="container">
+          <div class="row no-gutters port-row">
             <div class="col-lg-1"></div>
           <div class="col-lg-5 text-center">
             <a class="portfolio-item">
-              <img class="img-fluid" src="img/fishtrak-mockup.png" alt="">
+              <img class="img-fluid portfolio-image" src="img/Diive v6.jpg" alt="">
             </a>
-            <img alt="" src="img/mongodb.png" class="skill-img">
-            <img alt="" src="img/express.png" class="skill-img">
-            <img alt="" src="img/react.png" class="skill-img">
-            <img alt="" src="img/node.png" class="skill-img">
-            <h4>FishTrak - Zebrafish Management System</h4>
+          </div>
+            <div class="col-lg-1"></div>
+          <div class="col-lg-5 text-left">
+            <h4>Diive</h4>
+            <h6>Magazine Advertisement Series</h6>
+              <p>Derek Williams got in touch with me to generate an advertising series for his new company, Diive Consulting.
+                He wanted to make a visual representation of his company's name. I chose imagery and text that gave a feeling of depth.   
+              </p>
+          </div>
+          </div>
+          </div>
+        </section>
+        <!-- ZCore - right -->
+        <section class="content-section bg-tertiary">
+          <div class="container">
+          <div class="row no-gutters port-row">
+            <div class="col-lg-1"></div>
+          <div class="col-lg-5 text-left">
+            <h4>Duke School of Medicine Zebrafish Core</h4>
+            <h6>Website and Branding</h6>
+              <p>Using the wordpress platform, I designed a website and logo for the Duke University
+                School of Medicine Zebrafish Core Facilities (Z-Core). I also created a template for 
+                monthly newsletters.
+              </p>
+          </div>
+          <div class="col-lg-1"></div>
+          <div class="col-lg-5 text-left">
+            <a class="portfolio-item" href="https://sites.duke.edu/zebrafishfacility/">
+              <img class="img-fluid portfolio-image" src="img/zcore.png" alt="">
+            </a>
+          </div>
+          </div>
+          </div>
+        </section>
+        <!-- Dev Cell - left -->
+        <section class="content-section">
+          <div class="container">
+          <div class="row no-gutters port-row">
+            <div class="col-lg-1"></div>
+          <div class="col-lg-5 text-center">
+            <a class="portfolio-item">
+              <img class="img-fluid portfolio-image" src="img/DevCell.png" alt="">
+            </a>
+          </div>
+            <div class="col-lg-1"></div>
+          <div class="col-lg-5 text-left">
+            <h4>Developmental Cell Cover Image</h4>
+            <h6>Cover Illustration</h6>
+              <p>An illustration submitted alongside the Goldman et al. publication 
+                <a href="https://www.ncbi.nlm.nih.gov/pubmed/28245924">"Resolving Heart Regeneration by Replacement Histone Profiling"</a>
+              to Developmental Cell. I am second author on the paper and the image was featured on the journal's cover.
+              </p>
+          </div>
+          </div>
+          </div>
+        </section>
+        <!-- YUMBOT - right -->
+        <section class="content-section bg-tertiary">
+          <div class="container">
+          <div class="row no-gutters port-row">
+            <div class="col-lg-1"></div>
+          <div class="col-lg-5 text-left">
+            <h4>YumBot</h4>
+            <h6>Personal Digital Cookbook App</h6>
+              <p>YumBot allows the user to create an inventory of ingredients on hand, 
+                then submit a search to the Recipe Puppy API to return recipes that include
+                one or more of those ingredients. Users can favorite recipes to have them 
+                saved to their own Favorite Recipes Page. They can also save and edit their own 
+                recipes via their own Personal Recipes Page. Once saved, the recipes can be printed, 
+                emailed or tweeted.
+              </p>
+              <img alt="" src="img/mongodb.png" class="skill-img">
+              <img alt="" src="img/express.png" class="skill-img">
+              <img alt="" src="img/react.png" class="skill-img">
+              <img alt="" src="img/node.png" class="skill-img">
+          </div>
+          <div class="col-lg-1"></div>
+          <div class="col-lg-5 text-left">
+            <a class="portfolio-item" href="https://immense-mesa-61835.herokuapp.com/">
+              <img class="img-fluid portfolio-image" src="img/yumbot-mockup2.png" alt="">
+            </a>
+          </div>
+          </div>
+          </div>
+        </section>
+        <!-- FISHTRAK - left -->
+        <section class="content-section">
+          <div class="container">
+          <div class="row no-gutters port-row">
+            <div class="col-lg-1"></div>
+          <div class="col-lg-5 text-left">
+            <a class="portfolio-item">
+              <img class="img-fluid portfolio-image" src="img/fishtrak-mockup.png" alt="">
+            </a>
+          </div>
+            <div class="col-lg-1"></div>
+          <div class="col-lg-5 text-left">
+            <h4>FishTrak</h4>
+            <h6>Zebrafish Management System</h6>
               <p>The FishTrak app allows research labs to keep track of their 
                 zebrafish stocks in a digital format accessible to everyone within the lab.
-                 It also allows husbandry staff to communicate more easily
-                  with the research staff regarding the fish in their care.
+                It also allows husbandry staff to communicate more easily
+                with the research staff regarding the fish in their care.
               </p>
+              <img alt="" src="img/mongodb.png" class="skill-img">
+              <img alt="" src="img/express.png" class="skill-img">
+              <img alt="" src="img/react.png" class="skill-img">
+              <img alt="" src="img/node.png" class="skill-img">
           </div>
           </div>
-          <div class="row no-gutters port-row">
-          <div class="col-lg-1"></div>
-          <div class="col-lg-5 text-center">
-            <a class="portfolio-item" href="https://clickygame0728.herokuapp.com/">
-              <img class="img-fluid" src="img/clickygame-mockup.png" alt="">
-            </a>
-            <img alt="" src="img/react.png" class="skill-img">
-            <img alt="" src="img/javascript.png" class="skill-img">
-            <img alt="" src="img/jquery.png" class="skill-img">
-            <h4>Clicky Game - Javascript Game</h4>
-              <p>A game where players have to click on every image once to win the game. 
-                Click on any twice and it's game over.
-              </p>
           </div>
-        <div class="col-lg-1"></div>
-          <div class="col-lg-5 text-center">
-            <a class="portfolio-item" href="https://nlee728.github.io/Project1/">
-              <img class="img-fluid" src="img/pickaflick-mockup.png" alt="">
-            </a>
-            <img alt="" src="img/javascript.png" class="skill-img">
-            <img alt="" src="img/jquery.png" class="skill-img">
-            <img alt="" src="img/firebase.png" class="skill-img">
-            <h4>Pick A Flick - Movie Selection Application</h4>
-              <p>Users are able to create 
-                a group and vote with other users in the group on movies available in their zipcode. The 
-                TMS API will choose 5 movies and once the users submit their votes,
-                 the Open Agora API will tally the votes and display the winning movie. 
-                 Users will then be able to vote on showtimes for their chosen movie.
-              </p>
-          </div>
-          </div>
-      
-            <div class="row no-gutters port-row">
-                <div class="col-lg-1"></div>
-              <div class="col-lg-5 text-center">
-                <a class="portfolio-item">
-                 
-                  <img class="img-fluid" src="img/tzc.png" alt="">
-                </a>
-               <h4>Triangle Zebrafish Community Logo</h4>
-                  <p>Logo and swag designs created for the Triangle Zebrafish Community's annual retreat.
-                  </p>
-              </div>
-              <div class="col-lg-1"></div>
-              <div class="col-lg-5 text-center">
-                <a class="portfolio-item">
-                  
-                  <img class="img-fluid" src="img/diive.jpg" alt="">
-                </a>
-                <h4>Diive Consulting Ad</h4>
-                  <p>Magazine advertisement designed for Derek Williams at Diive Consulting. 
-                  </p>
-              </div>
-              </div>
-               
-              <div class="row no-gutters port-row">
-                <div class="col-lg-1"></div>
-                <div class="col-lg-5 text-center">
-                  <a class="portfolio-item">
-                   
-                    <img class="img-fluid" src="img/dev_cell.png" alt="">
-                  </a>
-                <h4>Developmental Cell Cover Image</h4>
-                    <p>An illustration submitted alongside the Goldman et al. publication 
-                        <a href="https://www.ncbi.nlm.nih.gov/pubmed/28245924">"Resolving Heart Regeneration by Replacement Histone Profiling"</a>
-                      to Developmental Cell. I co-authored the paper and the image was featured on the journal's cover.
-                    </p>
-                    </div>
-                    <div class="col-lg-1"></div>
-                    <div class="col-lg-5 text-center">
-                      <a class="portfolio-item" href="https://sites.duke.edu/zebrafishfacility/">
-                       
-                        <img class="img-fluid" src="img/zcore.png" alt="">
-                      </a>
-                    <h4>Z-Core Website and Branding</h4>
-                        <p>A website and logo designed for the Duke University
-                           School of Medicine Zebrafish Core Facilities (Z-Core) using the Wordpress platform. 
-                        </p>
-                    </div>
-                    </div>
-            </div>
-          </div>
-      </section>
+        </section>
 
     <!-- Contact -->
     <section class="content-section bg-primary text-white" id="contact">
       <div class="container text-center">
-        <h2 class="mb-4">Have a project you want to discuss?</h2>
+        <h3 class="mb-4">I'm always on the lookout for new, exciting projects.</h3>
+          <hr>
+          <h4>Reach out to me to talk about
+          <br/>
+          your next big (or small) thing!</h4>
+          <hr>
         <h1 class="text-center">
           <a href="#contactModal" role="button" class="btn btn-xl btn-light mr-4" data-toggle="modal">
             Contact Me
@@ -212,7 +288,7 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <label id="myModalLabel"><strong>I'd Love to Hear From You!</strong></label>
+              <label id="myModalLabel"><strong>LET'S WORK TOGETHER</strong></label>
             </div>
             <div class="modal-body">
               <form class="form-horizontal col-sm-12" id="contactform" method="POST" action="https://formspree.io/nutishia.lee@gmail.com">
@@ -248,12 +324,12 @@
       <div class="container">
         <ul class="list-inline mb-5">
           <li class="list-inline-item">
-              <a class="social-link rounded-circle text-white mr-3" href="https://github.com/nlee728" target="_blank">
+              <a class="social-link rounded-circle text-white mr-2" href="https://github.com/nlee728" target="_blank">
                 <i class="fab fa-github"></i>
               </a>
           </li>
           <li class="list-inline-item">
-              <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/nutishialee/" target="_blank">
+              <a class="social-link rounded-circle text-white mr-2" href="https://www.linkedin.com/in/nutishialee/" target="_blank">
                 <i class="fab fa-linkedin"></i>
               </a>
           </li>
@@ -268,7 +344,7 @@
               </a>
           </li> -->
         </ul>
-        <p class="text-muted small mb-0">Copyright &copy; nleedesign 2020 | All Rights Reserved.</p>
+        <p class="text-muted small mb-0">Copyright &copy; nleedesign 2021 | All Rights Reserved.</p>
       </div>
     </footer>
 
@@ -276,7 +352,6 @@
     <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
       <i class="fas fa-angle-up"></i>
     </a>
-
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
